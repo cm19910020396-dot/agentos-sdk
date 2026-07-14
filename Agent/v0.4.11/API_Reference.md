@@ -469,10 +469,12 @@ TTS并行播放接口，异步调用。多段文本同时下发，连续衔接�
 
 **参数说明：**
 - `text: String` - 要播放的文本
-- `timeoutMillis: Long` - 超时时间，单位毫秒，默认180秒
+- `timeoutMillis: Long` - 超时时间，单位毫秒，针对单段文本，默认180秒
 - `callback: TTSCallback?` - 回调，可为空
 
-**注意：** 若需要在某段播放结束后执行后续逻辑，请使用 `ttsSync()`。
+**注意：**
+- 若需要在某段播放结束后执行后续逻辑，请使用 `ttsSync()`
+- 需要 ROM 版本 12.3 及以上
 
 #### stopTTS()
 ```kotlin

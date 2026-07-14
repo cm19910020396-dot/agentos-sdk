@@ -1474,6 +1474,8 @@ fun stopTTS()
 将多段文本请求提交至服务端队列，由服务端连续生成并播放，段间无需等待客户端回调，适用于连续播报场景。若需要在某段播放结束后执行后续逻辑，使用 `ttsSync()`。
 
 > 调用 `stopTTS()` 会立即打断当前播放并清空服务端 TTS 队列，后续片段不再播放。
+>
+> 需要 ROM 版本 12.3 及以上。
 
 ```Kotlin
 import com.ainirobot.agent.AgentCore
