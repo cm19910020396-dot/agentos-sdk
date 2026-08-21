@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## [0.4.12-SNAPSHOT] - 2026-08-21
+### 新增
+- **请求级TTS接口**：新增 `AgentCore.ttsRequestSync()` 和 `AgentCore.ttsRequest()`，用于在指定时间内确认TTS请求是否成功，无需等待语音播放完成。
+- **语音交互模式设置与查询接口**：新增 `VoiceMode`、`AgentCore.setVoiceMode()` 和 `AgentCore.getVoiceMode()`，支持设置和查询设备的语音交互模式。
+
+### 兼容性
+- 本版本基于 ROM V12.6。
+
 ## [0.4.11-SNAPSHOT]
 ### 新增
 - **`AgentCore.ttsParallel()`**：新增TTS并行播放接口。将多段文本请求提交至服务端队列，由服务端连续生成并播放，段间无需等待客户端回调。需要 ROM 版本 12.3 及以上。

@@ -8,8 +8,8 @@
 
 ### 版本对应关系
 
-- **Mini机器人**：最新版本 → AgentOS SDK v0.4.11-SNAPSHOT (推荐)
-- **豹小秘2机器人**：最新版本 → AgentOS SDK v0.4.11-SNAPSHOT (推荐)
+- **Mini机器人**：最新版本 → AgentOS SDK v0.4.12-SNAPSHOT (推荐)
+- **豹小秘2机器人**：最新版本 → AgentOS SDK v0.4.12-SNAPSHOT (推荐)
 
 ⚠️ **重要提示**：推荐使用最新ROM版本以获得最佳性能和稳定性
 
@@ -17,29 +17,31 @@
 
 #### 🤖 豹小秘2机器人
 
-| 系统版本 | ROM版本 | SDK版本 | 维护状态 |
+| 系统类型 | ROM版本 | SDK版本 | 维护状态 |
 |---------|---------|---------|---------|
-| Release Latest | V12.3 | v0.4.11-SNAPSHOT | ✅ 最新版本 (推荐) |
-| Release Latest | V11.7 | v0.4.5 | ✅ 稳定版本 |
-| Release Latest | V11.6.2025092601 | v0.4.4 | ⚠️ 旧版本 |
+| Release | V12.6 | v0.4.12-SNAPSHOT | ✅ 最新版本 (推荐) |
+| Release | V12.3 | v0.4.11-SNAPSHOT | ✅ 稳定版本 |
+| Release | V11.7 | v0.4.5 | ✅ 稳定版本 |
+| Release | V11.6.2025092601 | v0.4.4 | ⚠️ 旧版本 |
 | Release | V11.4.2025082001 | v0.3.7 | ⚠️ 旧版本 |
 
 
 #### 🔹 Mini机器人
 
-| 系统版本 | ROM版本 | SDK版本 | 维护状态 |
+| 系统类型 | ROM版本 | SDK版本 | 维护状态 |
 |---------|---------|---------|---------|
-| Release Latest | V12.3 | v0.4.11-SNAPSHOT | ✅ 最新版本 (推荐) |
-| Release Latest | V11.7 | v0.4.5 | ✅ 稳定版本 |
-| Release Latest | V11.6.2025100912 | v0.4.4 | ⚠️ 旧版本 |
+| Release | V12.6 | v0.4.12-SNAPSHOT | ✅ 最新版本 (推荐) |
+| Release | V12.3 | v0.4.11-SNAPSHOT | ✅ 稳定版本 |
+| Release | V11.7 | v0.4.5 | ✅ 稳定版本 |
+| Release | V11.6.2025100912 | v0.4.4 | ⚠️ 旧版本 |
 | Release Enhanced | V10.3.2025071101 | v0.3.5 | ⚠️ 旧版本 |
 
 > **💡 提示**：推荐使用最新Release系统以获得完整功能支持和最佳性能体验
 
 ### 生产环境推荐配置
 
-- **豹小秘2机器人**：**AgentOS SDK v0.4.11-SNAPSHOT** + 最新Release系统 (V12.3)
-- **Mini机器人**：**AgentOS SDK v0.4.11-SNAPSHOT** + 最新Release系统 (V12.3)
+- **豹小秘2机器人**：**AgentOS SDK v0.4.12-SNAPSHOT** + 最新Release系统 (ROM V12.6)
+- **Mini机器人**：**AgentOS SDK v0.4.12-SNAPSHOT** + 最新Release系统 (ROM V12.6)
 
 ---
 
@@ -65,18 +67,19 @@ AgentOS SDK 是猎户星空智能机器人的官方开发工具包，提供完�
 ### 核心文档
 
 #### AgentOS SDK 文档
-- **SDK开发文档**：[AgentOS_SDK_Doc_v0.4.11.md](Agent/v0.4.11/AgentOS_SDK_Doc_v0.4.11.md)
+- **SDK开发文档**：[AgentOS_SDK_Doc_v0.4.12.md](Agent/v0.4.12/AgentOS_SDK_Doc_v0.4.12.md)
   - 大模型相关能力接口：对话管理、语音合成、智能交互等
-  - 新增TTS并行播放接口
+  - 新增请求级TTS接口，以及语音交互模式设置与查询接口
   - 适用于豹小秘2和Mini机器人最新版本
-- **API参考**：[v0.4.11版本](Agent/v0.4.11/API_Reference.md)
+- **API参考**：[v0.4.12版本](Agent/v0.4.12/API_Reference.md)
   - 完整的API参考文档，包含所有核心类、接口、方法、属性、构造函数、参数说明、返回值、使用示例等详细说明
-- **类路径参考**：[v0.4.11版本](Agent/v0.4.11/ClassPathList.md)
+- **类路径参考**：[v0.4.12版本](Agent/v0.4.12/ClassPathList.md)
   - 项目中所有关键类的完整包路径
-- **示例代码**：[v0.4.11版本](Agent/v0.4.11/SampleCodes.md)
+- **示例代码**：[v0.4.12版本](Agent/v0.4.12/SampleCodes.md)
   - 各功能模块的典型实现示例
-- **SDK Development Documentation (English)**：[AgentOS_SDK_Doc_v0.4.11_en.md](Agent/v0.4.11/AgentOS_SDK_Doc_v0.4.11_en.md)
+- **SDK Development Documentation (English)**：[AgentOS_SDK_Doc_v0.4.12_en.md](Agent/v0.4.12/AgentOS_SDK_Doc_v0.4.12_en.md)
   - Comprehensive guide for LLM capabilities, conversation management, TTS, intelligent interaction, wake-free functionality, and more
+  - Adds request-level TTS APIs and voice interaction mode management APIs
   - Applicable to the latest versions of Leopard Secretary 2 and Mini robots
 
 #### 机器人原生接口
@@ -129,8 +132,8 @@ AgentOS SDK 是猎户星空智能机器人的官方开发工具包，提供完�
 #### 标准开发步骤
 1. **环境准备**：安装 Android Studio，配置开发环境
 2. **文档学习**：阅读 AgentOS SDK 文档和机器人原生接口文档
-3. **示例参考**：参考示例代码 ([v0.4.11版本](Agent/v0.4.11/SampleCodes.md))
-4. **API查阅**：通过API参考文档 ([v0.4.11版本](Agent/v0.4.11/API_Reference.md)) 了解详细的类和方法使用说明
+3. **示例参考**：参考示例代码 ([v0.4.12版本](Agent/v0.4.12/SampleCodes.md))
+4. **API查阅**：通过API参考文档 ([v0.4.12版本](Agent/v0.4.12/API_Reference.md)) 了解详细的类和方法使用说明
 5. **功能集成**：按需集成 AgentOS SDK 和机器人原生API
 6. **测试验证**：测试验证功能实现效果
 
@@ -151,6 +154,6 @@ AgentOS SDK 是猎户星空智能机器人的官方开发工具包，提供完�
 
 ## 版本信息
 
-- **推荐SDK版本**：AgentOS SDK v0.4.11-SNAPSHOT（豹小秘2 & Mini机器人通用）
-- **机器人API版本**：v12.3
-- **文档更新时间**：2026年6月23日
+- **推荐SDK版本**：AgentOS SDK v0.4.12-SNAPSHOT（豹小秘2 & Mini机器人通用）
+- **ROM版本**：V12.6
+- **文档更新时间**：2026年8月21日
